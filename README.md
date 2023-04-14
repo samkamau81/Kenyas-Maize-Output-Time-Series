@@ -7,16 +7,16 @@ I recommend on getting this book to understand how to analyze Time Series like a
 
 ![image](https://user-images.githubusercontent.com/63351043/231533189-1ebbbe73-c3cf-4dab-b1e4-29acbf147d1c.png)
 
+## Handling Missing Data 
+The most common methods to address missing data in time series are: 
 
-* The most common methods to address missing data in time series are: 
-
-### Imputation
+### * Imputation
 When we fill in missing data based on observations about the entire data set.
 
-### Interpolation
+### * Interpolation
 When we use neighboring data points to estimate the missing value. Interpolation can also be a form of imputation.
 
-### Deletion of affected time periods
+### * Deletion of affected time periods
 When we choose not to use time periods that have missing data at all
 
 

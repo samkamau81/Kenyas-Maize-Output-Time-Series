@@ -8,7 +8,7 @@ behaves interms of Imports and Exports , Location where it is grown and When is 
 
 ![image](https://user-images.githubusercontent.com/63351043/230066193-4e79fbc5-46d2-4f1a-a881-a90b404944b1.png)
 
-- - 
+- - - -
 
 # Data Preparation 
 
@@ -29,14 +29,14 @@ may not reflect the underlying process and may be more a matter of instrumentati
 __Smoothing data__ is strongly related to imputing missing data, and so some of those techniques are relevant here as well. For example, you can smooth data by applying a rolling mean, with or without a lookahead, as that is simply a matter of the point’s
 position relative to the window used to calculate its smoothed value.
 When you are smoothing, you want to think about a number of questions:
-- Why are you smoothing? 
+___Why are you smoothing ? ___ 
 Smoothing can serve a number of purposes: 
-*Data preparation* - Is your raw data unsuitable? For example, you may know very high values are unlikely or unphysical, but you need a principled way to deal with them. Smoothing is the most straightforward solution.
-*Feature generation* - The practice of taking a sample of data, be it many characteristics about a person, image, or anything else, and summarizing it with a few metrics. In this way a fuller sample is collapsed along a few dimensions or down to a few
+- *Data preparation* - Is your raw data unsuitable? For example, you may know very high values are unlikely or unphysical, but you need a principled way to deal with them. Smoothing is the most straightforward solution.
+- *Feature generation* - The practice of taking a sample of data, be it many characteristics about a person, image, or anything else, and summarizing it with a few metrics. In this way a fuller sample is collapsed along a few dimensions or down to a few
 traits. Feature generation is especially important for machine learning.
 Prediction - The simplest form of prediction for some kinds of processes is mean reversion, which you get by making predictions from a smoothed feature.
-*Visualization*
-Do you want to add some signal to what seems like a noisy scatter plot? If so, what is your intention in doing so?
+- *Visualization* - Do you want to add some signal to what seems like a noisy scatter plot? If so, what is your intention in doing so?
+
 *Therefore __Smoothing data__ is the process of removing noise from a dataset*
 
 ![image](https://www.investopedia.com/thmb/AlWZjs7tasYiBJGyzVOl1cObsKU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/dotdash_Final_Strategies_Applications_Behind_The_50_Day_EMA_INTC_AAPL_Jul_2020-03-4913804fedb2488aa6a3e60de37baf4d.jpg)
@@ -57,7 +57,8 @@ You often won’t want to treat all time points equally when smoothing. In parti
 
 In my project, I have used Exponential Smoothing which as researched is the most suitable.
 
-- - 
+- - - - 
+
 I recommend on getting this book to understand how to analyze Time Series like a Pro !!
 
 ![image](https://user-images.githubusercontent.com/63351043/231533189-1ebbbe73-c3cf-4dab-b1e4-29acbf147d1c.png)

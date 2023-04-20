@@ -22,3 +22,19 @@ When we choose not to use time periods that have missing data at all
 
 ## Smoothing Data
 Smoothing data can be done for a variety of reasons, and often real-world time series data is smoothed before analysis, especially for visualizations that aim to tell an understandable story about the data. 
+
+While outlier detection is a topic in and of itself, if you have reason to believe your data should be smoothed, you can do so with a moving average to eliminate measurement spikes, errors of measurement, or both. Even if the spikes are accurate, they
+may not reflect the underlying process and may be more a matter of instrumentation problems; this is why it’s quite common to smooth data.
+#### Therefore Smoothing data is the process of removing noise from a dataset
+
+![image](https://www.investopedia.com/thmb/AlWZjs7tasYiBJGyzVOl1cObsKU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/dotdash_Final_Strategies_Applications_Behind_The_50_Day_EMA_INTC_AAPL_Jul_2020-03-4913804fedb2488aa6a3e60de37baf4d.jpg)
+
+#### Pros
+- Helps identify real trends by eliminating noise from the data
+- Allows for seasonal adjustments of economic data
+- Easily achieved through several techniques including moving averages
+#### Cons
+- Removing data always comes with less information to analyze, increasing the risk of errors in analysis
+- Smoothing may emphasize analysts' biases and ignore outliers that may be meaningful
+
+This being said, it is essential to smooth data despite its cons.

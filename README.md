@@ -30,6 +30,7 @@ __Smoothing data__ is strongly related to imputing missing data, and so some of 
 position relative to the window used to calculate its smoothed value.
 When you are smoothing, you want to think about a number of questions:
 ___Why are you smoothing ? ___ 
+
 Smoothing can serve a number of purposes: 
 - *Data preparation* - Is your raw data unsuitable? For example, you may know very high values are unlikely or unphysical, but you need a principled way to deal with them. Smoothing is the most straightforward solution.
 - *Feature generation* - The practice of taking a sample of data, be it many characteristics about a person, image, or anything else, and summarizing it with a few metrics. In this way a fuller sample is collapsed along a few dimensions or down to a few

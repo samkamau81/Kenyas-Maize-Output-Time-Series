@@ -41,11 +41,11 @@ Do you want to add some signal to what seems like a noisy scatter plot? If so, w
 
 ![image](https://www.investopedia.com/thmb/AlWZjs7tasYiBJGyzVOl1cObsKU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/dotdash_Final_Strategies_Applications_Behind_The_50_Day_EMA_INTC_AAPL_Jul_2020-03-4913804fedb2488aa6a3e60de37baf4d.jpg)
 
-#### Pros | #### Cons
-----------|------------
-Helps identify real trends by eliminating noise from the data |- Removing data always comes with less information to analyze, increasing the risk of errors in analysis
+#### Pros | Cons
+---------- | ------------
+Helps identify real trends by eliminating noise from the data | Removing data always comes with less information to analyze, increasing the risk of errors in analysis
 
-Allows for seasonal adjustments of economic data |Smoothing may emphasize analysts' biases and ignore outliers that may be meaningful
+Allows for seasonal adjustments of economic data | Smoothing may emphasize analysts' biases and ignore outliers that may be meaningful
 
 Easily achieved through several techniques including moving averages | \
 

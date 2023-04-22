@@ -53,12 +53,41 @@ Prediction - The simplest form of prediction for some kinds of processes is mean
 
 ***This being said, it is essential to smooth data despite its cons.***
 
+### Moving average
+The moving average model is probably the most naive approach to time series modelling. This model simply states that the next observation is the mean of all past observations.
 ### Exponential smoothing
 
 You often won’t want to treat all time points equally when smoothing. In particular, you may want to treat more recent data as more informative data, in which case exponential smoothing is a good option. In contrast to the moving average where each point where data was missing could be imputed to the mean of its surrounding points—exponential smoothing is geared to be more temporally aware, weighting more recent points higher than less recent points. So, for a given window, the nearest point in time is weighted most heavily and each point earlier in time is weighted exponentially less (hence the name).
+This can also include Double , triple and the simple exponential smoothing.
+
+### Seasonal autoregressive integraded moving average model (SARIMA)
+SARIMA is actually the combination of simpler models to make a complex model that can model time series exhibiting non-stationary properties and seasonality. At first, we have the autoregression model AR(p). This is basically a regression of the time series onto itself. Here, we assume that the current value depends on its previous values with some lag. It takes a parameter p which represents the maximum lag. To find it, we look at the partial autocorrelation plot and identify the lag after which most lags are not significant.
 
 In my project, I have used Exponential Smoothing which as researched is the most suitable.
+Facebook Prophet is designed to handle time series data with multiple seasonality and trends, and it includes a built-in method for performing exponential smoothing. In Prophet, exponential smoothing can be achieved by specifying a parameter called "seasonality_mode" when creating the model.
 
+By default, Prophet uses a parameter called "seasonality_mode" set to "additive", which implies that the seasonal component of the time series is added to the trend component. However, if you want to use exponential smoothing, you can set the parameter "seasonality_mode" to "multiplicative".
+To perform exponential smoothing using Prophet, you can follow these steps:
+- Import the necessary libraries and load your time series data into a Pandas DataFrame.
+- Create a new Prophet model object by calling the Prophet() function.
+- Set the "seasonality_mode" parameter to "multiplicative" to enable exponential smoothing.
+- Fit the model to your data using the fit() function.
+- Generate a forecast for a specified period of time using the make_future_dataframe() and predict() functions.
+
+'''
+# Create a new Prophet model object
+model = Prophet(seasonality_mode='multiplicative')
+
+# Fit the model to the data
+model.fit(df)
+
+# Generate a forecast for the next 30 days
+future_df = model.make_future_dataframe(periods=30)
+forecast = model.predict(future_df)
+
+# Plot the forecasted values
+model.plot(forecast)
+'''
 - - - - 
 
 I recommend on getting this book to understand how to analyze Time Series like a Pro !!

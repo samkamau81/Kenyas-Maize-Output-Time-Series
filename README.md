@@ -75,12 +75,18 @@ To perform exponential smoothing using Prophet, you can follow these steps:
 - Generate a forecast for a specified period of time using the make_future_dataframe() and predict() functions.
 
 ```python:
-model = Prophet(seasonality_mode='multiplicative') #Create a new Prophet model object
-model.fit(df) # Fit the model to the data
-future_df = model.make_future_dataframe(periods=30)   # Generate a forecast for the next 30 days
+#Create a new Prophet model object
+model = Prophet(seasonality_mode='multiplicative') 
+
+# Fit the model to the data
+model.fit(df) 
+
+# Generate a forecast for the next 30 days
+future_df = model.make_future_dataframe(periods=30)  
 forecast = model.predict(future_df)
 
-model.plot(forecast) # Plot the forecasted values
+# Plot the forecasted values
+model.plot(forecast) 
 ```
 - - - - 
 

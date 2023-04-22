@@ -88,6 +88,9 @@ forecast = model.predict(future_df)
 # Plot the forecasted values
 model.plot(forecast) 
 ```
+
+![image](https://user-images.githubusercontent.com/63351043/233796976-bef61b1d-b29d-4620-be81-1580fd88e3dd.png)
+
 - - - - 
 
 I recommend on getting this book to understand how to analyze Time Series like a Pro !!
